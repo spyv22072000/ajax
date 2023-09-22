@@ -5,7 +5,7 @@ $(function(){
  addtodobtn.click(function(){
 
     let newTodo=newtodobox.val()
-    $.post(
+    $.post(                          // AJAX HERE //
         '/todos',
         {task:newTodo},
         function(data){
